@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".LoginActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SIGN IN"
+        android:textColor="#FFFFFF"
+        android:textSize="26dp"
+        android:layout_marginBottom="75dp"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/et_emailSignin"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Username"
+        android:paddingLeft="10dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/et_passwordSignin"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="10dp"
+        android:hint="Password"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:imeActionId="6"
+        android:imeActionLabel="Sign In"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_signupSignin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#ffffff"
+            android:text="Sign Up" />
+
+        <Button
+            android:id="@+id/button_signinSignin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:layout_weight="1"
+            android:text="SIGN In" />
+    </LinearLayout>
+</LinearLayout>

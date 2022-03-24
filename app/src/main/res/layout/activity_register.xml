@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/background">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CREATE YOUR ACCOUNT"
+        android:textColor="#FFFFFF"
+        android:textSize="26dp"
+        android:layout_marginBottom="75dp"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/et_emailSignup"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:layout_height="36dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"/>
+    <EditText
+        android:id="@+id/et_passwordSignup"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"/>
+    <EditText
+        android:id="@+id/et_passwordSignup2"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginBottom="30dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeActionLabel="Sign Up"
+        android:imeOptions="actionDone" />
+    <Button
+        android:id="@+id/button_signupSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:text="Sign Up" />
+</LinearLayout>
